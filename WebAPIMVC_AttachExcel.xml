@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPIMVC_AttachExcel</name>
+    </assembly>
+    <members>
+        <member name="T:WebAPIMVC_AttachExcel.AttachExcelController">
+            <summary>
+            ManipulateExcelController
+            </summary>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.AttachExcelController.#ctor(WebAPIMVC_AttachExcel.Interfaces.IAttachExcelService)">
+            <summary>
+            AttachExcelController constructor
+            </summary>
+            <param name="injectedAttachExcelServiceService"></param>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.AttachExcelController.UploadToMaximo(System.String)">
+            <summary>
+            This API will return calculated Data for GRR Report
+            </summary>       
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.IEmailService.SendEmailNotification(System.String,System.String)">
+            <summary>
+            SendEmailNotification
+            </summary>
+            <param name="subject"></param>
+            <param name="msgBody"></param>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.Interfaces.IAttachExcelService.AttachExcelToMaximo(System.String)">
+            <summary>
+            Returns bool
+            </summary>
+            <param name="parsableJobData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPIMVC_AttachExcel.Program">
+            <summary>
+            Program class
+            </summary>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            CreateWebHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPIMVC_AttachExcel.EmailService">
+            <summary>
+            EmailService
+            </summary>
+        </member>
+        <member name="F:WebAPIMVC_AttachExcel.EmailService.support_EmailList">
+            <summary>
+            support_EmailList
+            </summary>
+        </member>
+        <member name="F:WebAPIMVC_AttachExcel.EmailService.smtp_Server">
+            <summary>
+            smtp_Server
+            </summary>
+        </member>
+        <member name="F:WebAPIMVC_AttachExcel.EmailService.smtp_Port">
+            <summary>
+            smtp_Port
+            </summary>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.EmailService.SendEmailNotification(System.String,System.String)">
+            <summary>
+            SendEmailNotification
+            </summary>
+            <param name="subject"></param>
+            <param name="msgBody"></param>
+            <param name="logMe"></param>
+        </member>
+        <member name="T:WebAPIMVC_AttachExcel.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="P:WebAPIMVC_AttachExcel.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices. This method gets called by runtime
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:WebAPIMVC_AttachExcel.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Configure --> This method gets called by runtime
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
